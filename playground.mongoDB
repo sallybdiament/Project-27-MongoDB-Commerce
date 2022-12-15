@@ -1,4 +1,5 @@
 use('commerce');
-db.produtos.find({
-    valoresNutricionais:{ $elemMatch:{ tipo:calorias, quantidade: {$lt: 500}}}
-}, { nome: 1, _id: 0 });
+db.resumoProdutos.insertOne({ franquia: "McDonalds", totalPrdutos: db.produtos.countDocuments() });
+
+db.resumoProdutos.findOne({}, { _id: 0, franquia: 1, totalPrdutos: 1 });
+
