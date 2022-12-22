@@ -23,9 +23,12 @@ Projeto 27 da [Trybe](https://wwww.betrybe.com), módulo de Back-End.
 
 #### 4 - Restaurar o banco de dados
 
-Na raiz do diretório do projeto, executar `DBNAME=commerce ./scripts/resetdb.sh assets/produtos`
+Na raiz do projeto, executar `DBNAME=commerce ./scripts/resetdb.sh assets/produtos`
 A execução desse script criará um banco de dados chamado commerce e importará os dados para a coleção produtos.
 
+#### 5 - Instalar o ESLint
+
+Na raiz do projeto, executar `npm install`
 #### \*É possível utilizar a extensão `MongoDB for VS Code` criando um arquivo `.mongoDB` para visualizar o resultado das queries.\*
 
 ## Tecnologias
