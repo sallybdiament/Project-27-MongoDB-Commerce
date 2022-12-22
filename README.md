@@ -6,35 +6,28 @@ Projeto 27 da [Trybe](https://wwww.betrybe.com), módulo de Back-End.
 
 ![Os 32 requisistos do projeto foram realizados com sucesso](/results.png)
 
-## O Projeto
-
-#### 1. Criação da tabela:
-   - Modelar e normalizar essas tabelas para a 3° Forma Normal. 
-   - Criar tabelas que referenciam chaves primárias de outras, criando relacionamentos que pode ser: 1x1, 1xN e NxN.
-
-#### 2. Criação Queries:
-   - Utilizando `WHERE`, `INNER JOIN`, `GROUP BY`, `ORDER BY`, entre outros.
-
 ## Instalação 
 
 #### 1- Clonar o repositório
 
-```git clone git@github.com:sallybdiament/Project-20-MySQL-One-For-All.git```
+```git clone git@github.com:sallybdiament/Project-27-MongoDB-Commerce.git```
 
-#### 2 - Subir os containers `node` e `db` utilizando o docker-compose
+#### 2 - Criar um `container` com um volume apontando para a pasta do projeto
 
-Na raíz do projeto: ```docker-compose up -d```
+ Na raiz do projeto: `docker run -d --name=nomeDoContainer -v "$PWD:/app" -p 27017:27017 mongo:5.0`
 
-#### 3 - Abrir o terminal do container `one_for_all`
+#### 3 - Com o container em execução, acessar o terminal do container
 
-```docker exec -it one_for_all bash```
+ `docker exec -it nomeDoContainer bash`
 
-#### 4 - Instalar as dependências
+#### 4 - Restaurar o banco de dados
 
-No terminal do container: ```npm install```
+Na raiz do diretório do projeto, executar `DBNAME=commerce ./scripts/resetdb.sh assets/produtos`
+A execução desse script criará um banco de dados chamado commerce e importará os dados para a coleção produtos.
 
-#### \*Foi utilizado o MySQL Workbench para visualizar as tabelas e as queries.\*
+#### \*É possível utilizar a extensão `MongoDB for VS Code` criando um arquivo `.mongoDB` para visualizar o resultado das queries.\*
 
 ## Tecnologias
- - SQL
+ - MongDB
+ - NoSQL
  - Docker CLI
