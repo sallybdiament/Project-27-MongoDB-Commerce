@@ -1,5 +1,5 @@
 # MongoDB Commerce - Back-End Project
-![MongoDB badge](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+![MongoDB badge](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white) ![Docker badge](https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white)
 
 32 queries para encontrar ou inserir informações no banco de dados NoSQL de um fast food. Foram utilizados operadores de filtro, de consulta, de arrays e operadores para update simples ou de arrays.
 
